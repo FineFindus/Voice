@@ -89,6 +89,8 @@ android {
     getByName("debug") {
       isMinifyEnabled = false
       isShrinkResources = false
+      applicationIdSuffix = ".dev"
+      versionNameSuffix = "-DEBUG"
     }
     all {
       signingConfig = signingConfigs.getByName("release")
